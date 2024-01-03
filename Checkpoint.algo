@@ -1,0 +1,30 @@
+ALGORITHM  CheckpointAlgo
+VAR
+sentenceLength,numberWords,numberVowels,f, :INTEGER;
+
+sentence:STRING;
+sum: INTEGER : =0;
+
+
+
+BEGIN
+
+read(sentence);
+
+WHILE (sentence [f] <> ".") DO
+        sentenceLength:=sentenceLength +1;
+        IF (sentence [f] = " ") THEN
+        numberWords:=numberWords +1 ;
+    END_IF
+    IF (sentence [f] = "a" or "i" or "o" or "u") THEN
+        numberVowels:= numberVowels + 1 
+
+    END_IF
+        f:= f+1;
+    END_WHILE
+
+END_WHILE
+
+Write( sentenceLength,numberWords,numberVowels)
+ 
+ End 
